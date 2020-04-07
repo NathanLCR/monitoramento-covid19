@@ -25,14 +25,10 @@ function showData(data) {
 
 function createTable(data) {
   $("tbody").append("<tr>");
-  console.log(data);
-  let state = data.state;
-  let cases = data.cases;
-  let deaths = data.deaths;
 
-  $("tbody").append("<td> " + state + "</td>");
-  $("tbody").append("<td> " + cases + "</td>");
-  $("tbody").append("<td> " + deaths + "</td>");
+  $("tbody").append("<td> " + data.state + "</td>");
+  $("tbody").append("<td> " + data.cases + "</td>");
+  $("tbody").append("<td> " + data.deaths + "</td>");
 
   $("tbody").append("</tr>");
 }
